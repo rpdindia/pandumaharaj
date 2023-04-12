@@ -1,9 +1,22 @@
 // Select The Elements
+var toggle_switch;
 var toggle_btn;
 var big_wrapper;
 var hamburger_menu;
 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 30) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
+
+/*==================== CHANGE BACKGROUND HEADER CLOSED====================*/
+
 function declare() {
+  toggle_switch = document.querySelector("#checkbox");
   toggle_btn = document.querySelector(".toggle-btn");
   big_wrapper = document.querySelector(".big-wrapper");
   hamburger_menu = document.querySelector(".hamburger-menu");
@@ -42,7 +55,7 @@ function toggleAnimation() {
 }
 
 function events() {
-  toggle_btn.addEventListener("click", toggleAnimation);
+  toggle_switch.addEventListener("change", toggleAnimation);
   hamburger_menu.addEventListener("click", () => {
     big_wrapper.classList.toggle("active");
   });
@@ -50,11 +63,3 @@ function events() {
 
 events();
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-function scrollHeader() {
-  const nav = document.getElementById("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 30) nav.classList.add("scroll-header");
-  else nav.classList.remove("scroll-header");
-}
-window.addEventListener("scroll", scrollHeader);
