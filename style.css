@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .light {
-  --mainColor: #64bcf4;
+  --mainColor: orangered;
   --hoverColor: #5bacdf;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
@@ -15,7 +15,7 @@
 }
 
 .dark {
-  --mainColor: #64bcf4;
+  --mainColor: orangered;
   --hoverColor: #5bacdf;
   --backgroundColor: #192e3a;
   --darkOne: #f3f3f3;
@@ -405,6 +405,7 @@ figcaption {
   bottom: 10px;
   top: 10px;
   font-size: 15px;
+  font-weight: 500;
   height: 60px;
   padding: 10px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);

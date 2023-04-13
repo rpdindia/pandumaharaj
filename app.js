@@ -13,7 +13,7 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== CHANGE BACKGROUND HEADER CLOSED====================*/
+/*====================  Theme Switcher====================*/
 
 function declare() {
   toggle_switch = document.querySelector("#checkbox");
@@ -53,6 +53,7 @@ function toggleAnimation() {
     events();
   });
 }
+/*==================== Mobile Menu====================*/
 
 function events() {
   toggle_switch.addEventListener("change", toggleAnimation);
@@ -62,4 +63,13 @@ function events() {
 }
 
 events();
+
+/*====================copyright year====================*/
+
+
+var date = new Date();
+var year = date.getFullYear();
+
+document.getElementById("year").innerHTML=year;
+
 
