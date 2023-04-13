@@ -459,9 +459,11 @@ figcaption {
     transition: 0.5s;
     border-radius: 10px;
   }
-.trans-btn{
-  margin-bottom: 10px;
-}
+
+  .trans-btn {
+    margin-bottom: 10px;
+  }
+
   .toggle_switch {
     position: relative;
     top: 5px;
