@@ -374,7 +374,6 @@ figcaption {
 .footer-section .social-links {
   margin-bottom: 10px;
   padding: 10px;
-  /* background-color: green; */
   height: 80px;
   position: relative;
   bottom: 5px;
@@ -384,7 +383,7 @@ figcaption {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(252, 9, 9, 0.2);
+  background-color: var(--lightTwo);
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
@@ -395,7 +394,7 @@ figcaption {
 }
 
 .footer-section .social-links a:hover {
-  color: #24262b;
+  color: #fafbfe;
   background-color: var(--mainColor);
 }
 
