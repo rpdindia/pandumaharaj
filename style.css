@@ -123,7 +123,9 @@ header .container {
   color: orangered;
 }
 
-
+.translate{
+  display: none;
+}
 .trans-btn {
   border: none;
   outline: none;
