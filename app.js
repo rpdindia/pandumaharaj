@@ -73,3 +73,17 @@ var year = date.getFullYear();
 document.getElementById("year").innerHTML=year;
 
 
+/*====================Translate ====================*/
+
+
+// var sb = document.getElementById('lang-translate');
+// var o = document.getElementById('mr');
+// o.selected = 'selected';
+// o.value = '#';
+
+// var sb = document.getElementById('lang-translate');
+// var o = document.getElementById('en');
+
+// o.value = '#';
+// sb.onchange = function () { document.location.href = this.value; }
+
