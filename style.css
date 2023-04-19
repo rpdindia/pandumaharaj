@@ -704,7 +704,7 @@ form .button-area {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 870px) {
   .wrapper header {
     text-align: center;
     z-index: 0;
