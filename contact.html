@@ -7,13 +7,15 @@
     <title>Pandu Maharaj - Contact </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <main>
         <div class="big-wrapper light">
-                <!-- ============== Header Modal ================ -->
+            <!-- ============== Header Modal ================ -->
 
             <header id="header">
                 <div class="container">
@@ -51,25 +53,26 @@
             <div class="form-body">
                 <div class="wrapper">
                     <header>Send us a Message</header>
-                    <form action="#">
+                    <form action="https://rpdiginet.blogspot.com/" name="cform" >
                         <div class="dbl-field">
-                            <div class="field">
-                                <input type="text" name="name" placeholder="Enter your full name">
+                            <div class="field name-field">
+                                <input type="text" placeholder="Enter your full name" class="name">
                                 <i class='fas fa-user'></i>
+                                <span class="error name_error" ><i id="error-icon" class="fa-solid fa-circle-exclamation"></i> Name field is required</span>
                             </div>
-                            <div class="field">
-                                <input type="email" name="email" placeholder="Enter your email">
+                            <div class="field email-field">
+                                <input type="email"  placeholder="Enter your email" class="email">
                                 <i class='fas fa-envelope'></i>
+                                <span class="error email_error" ><i id="error-icon" class="fa-solid fa-circle-exclamation"></i>Enter valid email address</span>
                             </div>
                         </div>
-
-                        <div class="message">
-                            <textarea placeholder="Write your message" name="message"></textarea>
+                        <div class="message field message-field">
+                            <textarea placeholder="Write your message" class="message-text"></textarea>
                             <i class="material-icons">message</i>
+                            <span class="error msg_error"><i id="error-icon" class="fa-solid fa-circle-exclamation"></i>Message field is required</span>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send Message</button>
-                            <span></span>
                         </div>
                     </form>
                 </div>
@@ -105,7 +108,6 @@
     </main>
     <!-- JavaScript Files -->
     <script src="./app.js"></script>
-<script src="script.js"></script>
 </body>
 
 </html>
