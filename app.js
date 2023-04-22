@@ -87,12 +87,13 @@ document.getElementById("year").innerHTML = year;
 /*====================Contact form ====================*/
 
 const form = document.querySelector("form"),
-  nameField = form.querySelector(".name-field"),
-  nameInput = nameField.querySelector(".name"),
-  emailField = form.querySelector(".email-field"),
-  emailInput = emailField.querySelector(".email"),
-  messageField = form.querySelector(".message-field"),
-  messageInput = messageField.querySelector(".message-text");
+
+  nameField = document.querySelector(".name-field"),
+  nameInput = document.querySelector(".name"),
+  emailField = document.querySelector(".email-field"),
+  emailInput = document.querySelector(".email"),
+  messageField = document.querySelector(".message-field"),
+  messageInput = document.querySelector(".message-text");
 
 function validateForm() {
   const namePattern = /^[a-zA-Z]+/; //name regx (regular expression)
