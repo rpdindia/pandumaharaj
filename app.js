@@ -64,12 +64,32 @@ function events() {
 
 events();
 
-/*====================copyright year====================*/
+/*==================== copyright year====================*/
 
 var date = new Date();
 var year = date.getFullYear();
 
 document.getElementById("year").innerHTML = year;
+
+/*====================  scroll to Top buttion ====================*/
+
+const footerElement = document.querySelector(".footer");
+
+const scrollElement = document.createElement("div");
+// scrollElement.classList.add("scrollTop");
+scrollElement.innerHTML = '<i class="fa-solid fa-arrow-up scroll-icon"></i>';
+
+footerElement.after(scrollElement);
+
+scrollElement.addEventListener("click", function (){
+  window.scrollTo({top:0,left:0,behavior:"smooth"})
+});
+function scrollbtn() {
+  // When the scroll is greater than 600 viewport height, add the scrollTop class 
+  if (this.scrollY >= 650) scrollElement.classList.add("scrollTop");
+  else scrollElement.classList.remove("scrollTop");
+}
+window.addEventListener("scroll", scrollbtn);
 
 /*====================Translate ====================*/
 
@@ -84,10 +104,9 @@ document.getElementById("year").innerHTML = year;
 // o.value = '#';
 // sb.onchange = function () { document.location.href = this.value; }
 
-/*====================Contact form ====================*/
+/*==================== Contact form ====================*/
 
 const form = document.querySelector("form"),
-
   nameField = document.querySelector(".name-field"),
   nameInput = document.querySelector(".name"),
   emailField = document.querySelector(".email-field"),

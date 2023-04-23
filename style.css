@@ -422,6 +422,29 @@ figcaption {
   transition: 0.3s;
   font-weight: 500;
 }
+/* =============== Scroll To Top  ====================== */
+.scrollTop{
+  position: fixed;
+  z-index: 10;
+  right: 15%;
+  bottom: 20%;
+opacity: 0.5;
+}
+.scrollTop:hover{opacity: 1;}
+
+.scroll-icon{
+  background-color: orangered;
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  color: #fff;
+
+}
+
+/* =============== Theme Change Animation  ====================== */
 
 .copy {
   position: absolute;
@@ -536,7 +559,11 @@ figcaption {
   .logo h3 {
     font-size: 1.25rem;
   }
-
+  .scrollTop{
+     right: 10%;
+    bottom: 12%; 
+  
+  }
 }
 
 @media screen and (max-width: 470px) {

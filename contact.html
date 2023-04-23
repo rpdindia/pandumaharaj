@@ -53,26 +53,26 @@
             <div class="form-body">
                 <div class="wrapper">
                     <header>Send us a Message</header>
-                    <form action="https://rpdiginet.blogspot.com/" name="cform" >
+                    <form action="#" name="cform" method="post" >
                         <div class="dbl-field">
                             <div class="field name-field">
-                                <input type="text" placeholder="Enter your full name" class="name">
+                                <input type="text" placeholder="Enter your full name" class="name" name="name">
                                 <i class='fas fa-user'></i>
                                 <span class="error name_error" ><i id="error-icon" class="fa-solid fa-circle-exclamation"></i> Name field is required</span>
                             </div>
                             <div class="field email-field">
-                                <input type="email"  placeholder="Enter your email" class="email">
+                                <input type="email"  placeholder="Enter your email" class="email"name="email">
                                 <i class='fas fa-envelope'></i>
                                 <span class="error email_error" ><i id="error-icon" class="fa-solid fa-circle-exclamation"></i>Enter valid email address</span>
                             </div>
                         </div>
                         <div class="message field message-field">
-                            <textarea placeholder="Write your message" class="message-text"></textarea>
+                            <textarea placeholder="Write your message" class="message-text" name="messasge"></textarea>
                             <i class="material-icons">message</i>
                             <span class="error msg_error"><i id="error-icon" class="fa-solid fa-circle-exclamation"></i>Message field is required</span>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send Message</button>
+                            <button type="submit" name="sendmsg">Send Message</button>
                         </div>
                     </form>
                 </div>
