@@ -73,13 +73,7 @@ document.getElementById("year").innerHTML = year;
 
 /*====================  scroll to Top buttion ====================*/
 
-const footerElement = document.querySelector(".footer");
-
-const scrollElement = document.createElement("div");
-// scrollElement.classList.add("scrollTop");
-scrollElement.innerHTML = '<i class="fa-solid fa-arrow-up scroll-icon"></i>';
-
-footerElement.after(scrollElement);
+const scrollElement=document.querySelector(".scrollTop")
 
 scrollElement.addEventListener("click", function (){
   window.scrollTo({top:0,left:0,behavior:"smooth"})
