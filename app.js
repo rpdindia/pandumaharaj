@@ -71,20 +71,6 @@ var year = date.getFullYear();
 
 document.getElementById("year").innerHTML = year;
 
-/*====================  scroll to Top buttion ====================*/
-
-const scrollElement=document.querySelector(".scrollTop")
-
-scrollElement.addEventListener("click", function (){
-  window.scrollTo({top:0,left:0,behavior:"smooth"})
-});
-function scrollbtn() {
-  // When the scroll is greater than 600 viewport height, add the scrollTop class 
-  if (this.scrollY >= 650) scrollElement.classList.add("scrollTop");
-  else scrollElement.classList.remove("scrollTop");
-}
-window.addEventListener("scroll", scrollbtn);
-
 /*====================Translate ====================*/
 
 // var sb = document.getElementById('lang-translate');

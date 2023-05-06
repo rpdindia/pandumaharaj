@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandu Maharaj - Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="big-wrapper light">
+            <!-- ============== Header Modal ================ -->
+
+            <header id="header">
+                <div class="container">
+                    <div class="logo">
+                        <h3><span>पांडुरंग</span> महाराज</h3>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li class="translate">
+                                <select id="lang-translate" class="trans-btn">
+                                    <option id="en" value="english">English</option>
+                                    <option id="mr" value="marathi">Marathi</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span class="toggle_switch">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox"></label>
+                                </span>
+                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </header>
+            <!-- ============== Gallary Modal ================ -->
+            <h1> Gallery</h1>
+            <div class="lightbox">
+              <div class="wrapper">
+                <header>
+                  <div class="details">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Image Preview</span>
+                  </div>
+                  <div class="buttons"><i class="close-icon fa-solid fa-xmark"></i></div>
+                </header>
+                <div class="preview-img">
+                  <div class="img"><img src="" alt="preview-img"></div>
+                </div>
+              </div>
+            </div>
+            <section class="gallery">
+              <ul class="images">
+                <li class="img"><img src="img/gallery/IMG_20210107_174356.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210319_155741.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210207_102708.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210207_102715.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210207_102723.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210207_102731.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210207_102745.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210210_135904.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210210_135837.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210214_115147.jpg" alt="img"></li>
+                <li class="img"><img src="img/gallery/IMG_20210214_115128.jpg" alt="img"></li>
+              </ul>
+            </section>
+        
+            
+            <!-- ============== footer Modal ================ -->
+
+            <div class="footer">
+                <div class="footer-content">
+
+                    <div class="footer-section">
+                        <div class="footer-address">
+                            <div class="title3">
+                                <h3>Get In Touch</h3>
+                            </div>
+                            <p>Pandu Maharaj Samadhi<br> Shree Gurudatta Mandir Nagaon<br> Dhule MH 424005 </p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://goo.gl/maps/svSy8oSKG4oGddDn7" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i></a>
+                            <a href="mailto:pandumaharajsamadhi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.instagram.com/pandu_maharaj_samadhi" target="_blank"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyrights © <span id="year"></span> RP Digital Network.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript Files -->
+    <script src="./app.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
