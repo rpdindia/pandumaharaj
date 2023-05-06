@@ -926,7 +926,6 @@ header .buttons i:hover {
   object-fit: contain;
 }
 
-/* Responsive media query code */
 @media screen and (max-width: 688px) {
   .lightbox .wrapper {
     padding: 12px;
