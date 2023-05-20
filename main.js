@@ -13,50 +13,11 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*====================  Theme Switcher====================*/
-
-function declare() {
-  toggle_switch = document.querySelector("#checkbox");
-  toggle_btn = document.querySelector(".toggle-btn");
-  big_wrapper = document.querySelector(".big-wrapper");
-  hamburger_menu = document.querySelector(".hamburger-menu");
-}
-
-const main = document.querySelector("main");
-
-declare();
-
-let dark = false;
-
-function toggleAnimation() {
-  // Clone the wrapper
-  dark = !dark;
-  let clone = big_wrapper.cloneNode(true);
-  if (dark) {
-    clone.classList.remove("light");
-    clone.classList.add("dark");
-  } else {
-    clone.classList.remove("dark");
-    clone.classList.add("light");
-  }
-  clone.classList.add("copy");
-  main.appendChild(clone);
-
-  document.body.classList.add("stop-scrolling");
-
-  clone.addEventListener("animationend", () => {
-    document.body.classList.remove("stop-scrolling");
-    big_wrapper.remove();
-    clone.classList.remove("copy");
-    // Reset Variables
-    declare();
-    events();
-  });
-}
 /*==================== Mobile Menu====================*/
+big_wrapper = document.querySelector(".big-wrapper");
+hamburger_menu = document.querySelector(".hamburger-menu");
 
 function events() {
-  toggle_switch.addEventListener("change", toggleAnimation);
   hamburger_menu.addEventListener("click", () => {
     big_wrapper.classList.toggle("active");
   });
@@ -76,12 +37,12 @@ document.getElementById("year").innerHTML = year;
 // var sb = document.getElementById('lang-translate');
 // var o = document.getElementById('mr');
 // o.selected = 'selected';
-// o.value = '#';
+// o.value = '.index.html';
 
 // var sb = document.getElementById('lang-translate');
 // var o = document.getElementById('en');
 
-// o.value = '#';
+// o.value = '.en.html';
 // sb.onchange = function () { document.location.href = this.value; }
 
 /*==================== Contact form ====================*/

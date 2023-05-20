@@ -14,7 +14,7 @@
 
 }
 
-.dark {
+/* .dark {
   --mainColor: orangered;
   --hoverColor: #5bacdf;
   --backgroundColor: #192e3a;
@@ -24,7 +24,7 @@
   --lightTwo: #e7e3e3;
   --lightThree: #fff;
 
-}
+} */
 
 *,
 *::before,
@@ -87,6 +87,8 @@ header {
   z-index: 70;
   position: sticky;
   top: 0;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.10);
+
 }
 
 header .container {
@@ -95,10 +97,6 @@ header .container {
   align-items: center;
   height: 50px;
 
-}
-
-.overlay {
-  display: none;
 }
 
 .logo {
@@ -138,42 +136,6 @@ header .container {
 
 }
 
-/* dark Theme Toggle Switch  */
-.toggle_switch {
-  position: relative;
-  left: 20px;
-}
-
-.toggle_switch input {
-  display: none;
-}
-
-.toggle_switch label {
-  display: block;
-  width: 38px;
-  padding: 4px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-  background-color: #a9aead;
-}
-
-.toggle_switch label::after {
-  content: "";
-  display: inherit;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #fff;
-  transition: 0.3s;
-}
-
-.toggle_switch input:checked~label::after {
-  transform: translateX(15px);
-  background: yellow;
-}
-
-/* dark Theme Toggle Switch closed */
 .links ul {
   display: flex;
   list-style: none;
@@ -422,27 +384,6 @@ figcaption {
   transition: 0.3s;
   font-weight: 500;
 }
-/* =============== Scroll To Top  ====================== */
-.scrollTop{
-  position: fixed;
-  z-index: 10;
-  right: 15%;
-  bottom: 20%;
-opacity: 0.5;
-}
-.scrollTop:hover{opacity: 1;}
-
-.scroll-icon{
-  background-color: orangered;
-  display: inline-block;
-  padding: 8px;
-  position: relative;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 4px;
-  color: #fff;
-
-}
 
 /* =============== Theme Change Animation  ====================== */
 
@@ -489,12 +430,6 @@ opacity: 0.5;
 
   .trans-btn {
     margin-bottom: 10px;
-  }
-
-  .toggle_switch {
-    position: relative;
-    top: 5px;
-    left: auto;
   }
 
   .links ul {
