@@ -776,7 +776,7 @@ h1 {
 }
 .gallery .images img {
   width: 100%;
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease; */
 }
 
 .gallery .images .img:hover img {
