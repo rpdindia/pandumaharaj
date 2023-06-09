@@ -14,18 +14,6 @@
 
 }
 
-/* .dark {
-  --mainColor: orangered;
-  --hoverColor: #5bacdf;
-  --backgroundColor: #192e3a;
-  --darkOne: #f3f3f3;
-  --darkTwo: #fff;
-  --lightOne: #ccc;
-  --lightTwo: #e7e3e3;
-  --lightThree: #fff;
-
-} */
-
 *,
 *::before,
 *::after {
@@ -37,7 +25,7 @@
 
 body {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", system-ui, sans-serif;
 
 }
 
@@ -468,10 +456,11 @@ figcaption {
   .logo h3 {
     font-size: 1.25rem;
   }
-  .scrollTop{
-     right: 10%;
-    bottom: 12%; 
-  
+
+  .scrollTop {
+    right: 10%;
+    bottom: 12%;
+
   }
 }
 
@@ -493,246 +482,19 @@ figcaption {
   }
 }
 
-
-
-/* =============== contact us ====================== */
-
-
-.form-body {
-  display: flex;
-  padding: 0 10px;
-  min-height: 60vh;
-  /* background: #0D6EFD; */
-  align-items: center;
-  justify-content: center;
-}
-
-.wrapper {
-  width: 715px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.05);
-}
-
-.wrapper header {
-  font-size: 22px;
-  font-weight: 600;
-  padding: 20px 30px;
-  border-bottom: 1px solid #ccc;
-}
-
-.wrapper form {
-  margin: 35px 30px;
-}
-
-.wrapper form.disabled {
-  pointer-events: none;
-  opacity: 0.7;
-}
-
-form .dbl-field {
-  display: flex;
-  margin-bottom: 25px;
-  justify-content: space-between;
-}
-
-.dbl-field .field {
-  height: 50px;
-  display: flex;
-  position: relative;
-  width: calc(100% / 2 - 13px);
-}
-
-form input[type=text],
-input[type=email],
-textarea,
-button {
-  font-family: "Poppins", sans-serif;
-}
-
-.wrapper form i {
-  position: absolute;
-  top: 50%;
-  left: 18px;
-  color: #ccc;
-  font-size: 17px;
-  pointer-events: none;
-  transform: translateY(-50%);
-}
-
-form .field input,
-form .message textarea {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  padding: 0 18px 0 48px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.field input::placeholder,
-.message textarea::placeholder {
-  color: #ccc;
-}
-
-.field input:focus,
-.message textarea:focus {
-  padding-left: 47px;
-  border: 2px solid #0D6EFD;
-}
-
-form .error {
-  position: absolute;
-  left: 20px;
-  top: 55px;
-  font-size: 14px;
-  color: red;
-  font-weight: 500;
-  display: block;
-  display: none;
-}
-.invalid .error{
-  display: block;
-}
-
-form .message .error {
-  position: absolute;
-  left: 20px;
-  top: 135px;
-}
-
-form span #error-icon {
-  position: relative;
-  top: 8px;
-  left: 0;
-  color: red;
-  margin-right: 10px;
-  font-size: 14px;
-}
-
-.field input:focus~i,
-.message textarea:focus~i {
-  color: #0D6EFD;
-}
-
-form .message {
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-form .message i {
-  top: 30px;
-  font-size: 20px;
-}
-
-form .message textarea {
-  min-height: 130px;
-  max-height: 230px;
-  max-width: 100%;
-  min-width: 100%;
-  padding: 15px 20px 0 48px;
-}
-
-form .message textarea::-webkit-scrollbar {
-  width: 0px;
-}
-
-.message textarea:focus {
-  padding-top: 14px;
-}
-
-form .button-area {
-  margin: 25px 0;
-  display: flex;
-  align-items: center;
-}
-
-.button-area button {
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 13px 25px;
-  background-color: #0D6EFD;
-  transition: background-color 0.3s ease;
-}
-
-.button-area button:hover {
-  background: #025ce3;
-}
-
-@media (max-width: 870px) {
-  .wrapper header {
-    text-align: center;
-    z-index: 0;
-  }
-
-  form .error {
-    position: absolute;
-    left: 20px;
-    top: 45px;
-    font-size: 14px;
-    color: red;
-  }
-
-  form span #error-icon {
-    position: relative;
-    top: 8px;
-    left: 0;
-    color: red;
-  }
-
-  .wrapper form {
-    margin: 35px 20px;
-  }
-
-  form .dbl-field {
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-
-  form .dbl-field .field {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 30px;
-  }
-
-  form .message {
-    margin: 5px 0 50px 0;
-  }
-
-  form .message textarea {
-    resize: none;
-  }
-
-  form .button-area {
-    margin-top: 20px;
-    flex-direction: column;
-  }
-
-  .button-area button {
-    width: 100%;
-    padding: 11px 0;
-    font-size: 16px;
-  }
-
-}
-
 /* =============== Gallery ====================== */
 h1 {
   text-align: center;
   margin-top: 50px;
 }
+
 /* Masonry image gallery styling */
 .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .gallery .images {
   gap: 15px;
   max-width: 85%;
@@ -740,6 +502,7 @@ h1 {
   columns: 4 310px;
   list-style: none;
 }
+
 .gallery .images .img {
   display: flex;
   cursor: pointer;
@@ -748,6 +511,7 @@ h1 {
   margin-bottom: 14px;
   border-radius: 4px;
 }
+
 .gallery .images img {
   width: 100%;
   /* transition: transform 0.2s ease; */
@@ -766,11 +530,13 @@ h1 {
   z-index: 5;
   position: fixed;
   visibility: hidden;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.65);
 }
+
 .lightbox.show {
   visibility: visible;
 }
+
 .lightbox .wrapper {
   position: fixed;
   left: 50%;
@@ -785,25 +551,31 @@ h1 {
   transform: translate(-50%, -50%) scale(0.9);
   transition: transform 0.1s ease;
 }
+
 .lightbox.show .wrapper {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
 }
+
 .wrapper :where(header, .details) {
   display: flex;
   align-items: center;
 }
+
 .wrapper header {
   justify-content: space-between;
 }
+
 header .details i {
   font-size: 1.7rem;
 }
+
 header .details span {
   font-size: 1.2rem;
   margin-left: 10px;
 }
+
 header .buttons i {
   height: 40px;
   width: 40px;
@@ -818,17 +590,21 @@ header .buttons i {
   border-radius: 4px;
   transition: 0.2s ease;
 }
+
 header .buttons i:hover {
   background: #5f666d;
 }
+
 .wrapper .preview-img {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
+
 .preview-img .img {
   max-height: 65vh;
 }
+
 .preview-img img {
   width: 100%;
   height: 100%;
@@ -840,9 +616,11 @@ header .buttons i:hover {
     padding: 12px;
     max-width: calc(100% - 26px);
   }
+
   .wrapper .preview-img {
     margin-top: 15px;
   }
+
   .gallery .images {
     max-width: 100%;
     padding: 0 13px;
